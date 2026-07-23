@@ -27,7 +27,7 @@ export function MeetingModal({ meeting, onClose }: MeetingModalProps) {
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-ink/50 px-6 py-10 backdrop-blur-sm animate-fade-in"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-ink/50 px-4 py-6 backdrop-blur-sm animate-fade-in sm:px-6 sm:py-10"
       onMouseDown={onClose}
     >
       <div
@@ -35,7 +35,7 @@ export function MeetingModal({ meeting, onClose }: MeetingModalProps) {
         role="dialog"
         aria-modal="true"
         aria-labelledby="meeting-title"
-        className="relative w-full max-w-lg rounded-xl2 border border-line bg-card p-9 shadow-modal animate-modal-in"
+        className="relative max-h-[90vh] w-full max-w-lg overflow-y-auto rounded-xl2 border border-line bg-card p-6 shadow-modal animate-modal-in sm:p-9"
         onMouseDown={(e) => e.stopPropagation()}
       >
         <button
@@ -53,7 +53,7 @@ export function MeetingModal({ meeting, onClose }: MeetingModalProps) {
         </span>
         <h2
           id="meeting-title"
-          className="mt-1 pr-8 font-display text-3xl leading-tight text-ink tracking-display"
+          className="mt-1 pr-8 font-display text-2xl leading-tight text-ink tracking-display sm:text-3xl"
         >
           {meeting.title}
         </h2>

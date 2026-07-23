@@ -18,19 +18,19 @@ export function Header({ participantName, onEditName }: HeaderProps) {
 
   return (
     <header className="bg-ink text-white">
-      <div className="mx-auto flex max-w-[1360px] items-center justify-between gap-8 px-10 py-6">
+      <div className="mx-auto flex max-w-[1360px] flex-col gap-4 px-4 py-5 sm:flex-row sm:items-center sm:justify-between sm:gap-8 sm:px-6 sm:py-6 lg:px-10">
         {/* Lado esquerdo */}
-        <div className="flex items-center gap-5">
-          <Logo className="h-14 w-14 shrink-0 text-white" />
-          <div className="border-l border-white/15 pl-5">
-            <h1 className="font-display text-2xl leading-tight tracking-display">
+        <div className="flex items-center gap-3 sm:gap-5">
+          <Logo className="h-11 w-11 shrink-0 text-white sm:h-14 sm:w-14" />
+          <div className="border-l border-white/15 pl-3 sm:pl-5">
+            <h1 className="font-display text-lg leading-tight tracking-display sm:text-2xl">
               {mentorshipName}
             </h1>
-            <p className="mt-1 text-sm text-white/70">
+            <p className="mt-1 text-xs text-white/70 sm:text-sm">
               Empresa:{" "}
               <span className="font-medium text-white/90">{companyName}</span>
             </p>
-            <p className="mt-0.5 text-xs uppercase tracking-label text-white/45">
+            <p className="mt-0.5 text-[10px] uppercase tracking-label text-white/45 sm:text-xs">
               Com {mentorName}
             </p>
           </div>
@@ -38,10 +38,10 @@ export function Header({ participantName, onEditName }: HeaderProps) {
 
         {/* Lado direito */}
         {participantName && (
-          <div className="flex items-center gap-2">
-            <span className="text-base text-white/90">
+          <div className="flex items-center gap-2 border-t border-white/10 pt-4 sm:border-0 sm:pt-0">
+            <span className="text-sm text-white/90 sm:text-base">
               Olá,{" "}
-              <span className="font-display text-lg tracking-display">
+              <span className="font-display text-base tracking-display sm:text-lg">
                 {participantName}
               </span>
             </span>

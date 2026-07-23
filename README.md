@@ -1,6 +1,7 @@
 # Portal da Mentoria de Implantação de Tráfego Pago Interno
 
-Portal desktop, leve e estático, que centraliza os **12 encontros** da mentoria.
+Portal web responsivo, leve e estático, que centraliza os **12 encontros** da
+mentoria — funciona bem em computador, tablet e celular.
 Após cada aula liberada, o participante acessa, por links externos:
 
 - 🎥 Gravação do encontro

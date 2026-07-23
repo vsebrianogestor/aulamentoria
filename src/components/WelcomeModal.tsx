@@ -58,7 +58,7 @@ export function WelcomeModal({
         role="dialog"
         aria-modal="true"
         aria-labelledby="welcome-title"
-        className="relative w-full max-w-md rounded-xl2 border border-line bg-card p-9 shadow-modal animate-modal-in"
+        className="relative max-h-[90vh] w-full max-w-md overflow-y-auto rounded-xl2 border border-line bg-card p-6 shadow-modal animate-modal-in sm:p-9"
         onMouseDown={(e) => e.stopPropagation()}
       >
         {isEdit && onClose && (
@@ -76,7 +76,7 @@ export function WelcomeModal({
 
         <h2
           id="welcome-title"
-          className="font-display text-3xl text-ink tracking-display"
+          className="font-display text-2xl text-ink tracking-display sm:text-3xl"
         >
           {isEdit ? "Editar seu nome" : "Bem-vindo à mentoria"}
         </h2>
