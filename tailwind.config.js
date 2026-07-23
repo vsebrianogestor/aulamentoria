@@ -13,6 +13,8 @@ export default {
         line: "#E4E1D9", // bordas discretas
         muted: "#8A857B", // texto secundário
         subtle: "#B7B2A8", // texto/ícones ainda mais suaves
+        success: "#16A34A", // verde do ponto de status "Disponível"
+        "success-text": "#15803D", // verde do texto (contraste AA em fundo claro)
       },
       fontFamily: {
         // VIBERATE (fonte solicitada) para marca e títulos de destaque.

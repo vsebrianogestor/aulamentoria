@@ -56,9 +56,9 @@ export function MeetingCard({ meeting, onOpen }: MeetingCardProps) {
       </h3>
       <div className="mt-auto pt-4">
         <p className="text-sm text-muted">Data: {date}</p>
-        <p className="mt-3 inline-flex items-center gap-1.5 text-sm font-medium text-ink">
+        <p className="mt-3 inline-flex items-center gap-1.5 text-sm font-medium text-success-text">
           <span
-            className="h-2.5 w-2.5 rounded-full bg-ink"
+            className="h-2.5 w-2.5 rounded-full bg-success"
             aria-hidden="true"
           />
           Disponível

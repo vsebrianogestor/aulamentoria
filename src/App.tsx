@@ -6,7 +6,6 @@ import { MeetingCard } from "./components/MeetingCard";
 import { MeetingModal } from "./components/MeetingModal";
 import { useParticipantName } from "./hooks/useParticipantName";
 import { meetings } from "./data/meetings";
-import { mentorshipConfig } from "./config/mentorship";
 import type { Meeting } from "./types/meeting";
 
 export default function App() {
@@ -54,21 +53,6 @@ export default function App() {
             ))}
           </section>
         </main>
-
-        {/* Rodapé */}
-        <footer className="border-t border-line bg-paper">
-          <div className="mx-auto flex max-w-[1360px] flex-col gap-1 px-10 py-8 text-sm text-muted">
-            <span>
-              Mentoria conduzida por{" "}
-              <span className="font-medium text-ink">
-                {mentorshipConfig.mentorName}
-              </span>
-            </span>
-            <span>
-              Todos os materiais são de uso exclusivo dos participantes.
-            </span>
-          </div>
-        </footer>
       </div>
 
       {/* Primeiro acesso: solicita o nome do participante. */}
