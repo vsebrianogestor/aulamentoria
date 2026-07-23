@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+  Fonte VIBERATE (solicitada) — usada na marca e nos títulos de destaque.
+  Os arquivos ficam em /public/fonts. Para trocar a fonte, basta substituir
+  esses arquivos ou este bloco @font-face.
+*/
+@font-face {
+  font-family: "Viberate";
+  src:
+    url("/fonts/viberate.woff2") format("woff2"),
+    url("/fonts/viberate.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-paper text-ink font-sans antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Foco visível e consistente para navegação por teclado (acessibilidade). */
+  :focus-visible {
+    outline: 2px solid theme("colors.ink");
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+}
+
+@layer utilities {
+  /* Espaçamento entre letras discreto para títulos em VIBERATE. */
+  .tracking-display {
+    letter-spacing: 0.01em;
+  }
+  .tracking-label {
+    letter-spacing: 0.18em;
+  }
+}
