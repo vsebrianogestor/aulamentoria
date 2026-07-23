@@ -31,7 +31,7 @@ export default function App() {
           {/* Área de abertura */}
           <section className="mb-10">
             <h2 className="font-display text-4xl text-ink tracking-display">
-              Cronograma da mentoria
+              Painel da mentoria
             </h2>
             <p className="mt-3 max-w-2xl text-[15px] leading-relaxed text-muted">
               Acesse as gravações, os materiais complementares e as tarefas
