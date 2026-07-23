@@ -7,7 +7,7 @@
  */
 export const mentorshipConfig = {
   mentorshipName: "Mentoria de Implantação de Tráfego Pago Interno",
-  companyName: "NOME DA EMPRESA",
+  companyName: "THEO CORRETORA",
   mentorName: "Vinícius Sebriano",
   supportText: "Conteúdos, materiais e tarefas dos encontros",
 } as const;
