@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import { X, PlayCircle, FileText, ClipboardCheck, PenLine } from "lucide-react";
+import { X, PlayCircle, FileText, PenLine } from "lucide-react";
 import type { Meeting } from "../types/meeting";
 import { ResourceButton } from "./ResourceButton";
 
@@ -68,22 +68,17 @@ export function MeetingModal({ meeting, onClose, onOpenTask }: MeetingModalProps
 
         <div className="mt-7 flex flex-col gap-3">
           <ResourceButton
-            label="Assistir à gravação"
+            label="Gravação e transcrição"
             url={meeting.recordingUrl}
             icon={PlayCircle}
           />
           <ResourceButton
-            label="Acessar material complementar"
+            label="Acessar o material do encontro"
             url={meeting.extraMaterialUrl}
             icon={FileText}
           />
           <ResourceButton
-            label="Acessar tarefa"
-            url={meeting.assignmentUrl}
-            icon={ClipboardCheck}
-          />
-          <ResourceButton
-            label="Realizar tarefa"
+            label="Acessar e realizar a tarefa"
             icon={PenLine}
             onClick={hasTaskForm ? () => onOpenTask(meeting) : undefined}
           />

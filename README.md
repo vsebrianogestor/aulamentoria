@@ -99,12 +99,11 @@ released: true, // encontro liberado
 
 ### Como adicionar os links
 
-Ainda em `src/data/meetings.ts`, preencha os três campos de link do encontro:
+Ainda em `src/data/meetings.ts`, preencha os campos de link do encontro:
 
 ```ts
-recordingUrl: "https://link-da-gravacao",       // gravação (vídeo)
-extraMaterialUrl: "https://link-do-material",    // material complementar (PDF)
-assignmentUrl: "https://link-da-tarefa",         // tarefa (PDF)
+recordingUrl: "https://link-da-gravacao",     // gravação e transcrição
+extraMaterialUrl: "https://link-do-material", // material do encontro
 ```
 
 - Enquanto um campo estiver vazio (`""`), o botão correspondente aparece
@@ -114,10 +113,11 @@ assignmentUrl: "https://link-da-tarefa",         // tarefa (PDF)
 
 ### Como receber as respostas da tarefa (formulário Tally)
 
-Cada encontro tem um botão **"Realizar tarefa"** que abre um pop-up com um
-formulário [Tally](https://tally.so) incorporado. As respostas caem no seu
-painel do Tally (e você recebe aviso por e-mail) — o portal continua estático,
-sem backend.
+Cada encontro tem um botão **"Acessar e realizar a tarefa"** que abre um pop-up
+com um formulário [Tally](https://tally.so) incorporado — onde o aluno lê o
+enunciado e envia as respostas no mesmo lugar. As respostas caem no seu painel
+do Tally (e você recebe aviso por e-mail) — o portal continua estático, sem
+backend.
 
 Para habilitar em um encontro:
 
@@ -134,11 +134,10 @@ Para habilitar em um encontro:
 taskFormUrl: "https://tally.so/r/XXXXXX",
 ```
 
-- Enquanto `taskFormUrl` estiver vazio (`""`), o botão "Realizar tarefa" fica
-  **desativado** ("Ainda não disponível").
-- O campo `assignmentUrl` (PDF) continua sendo o **enunciado** da tarefa para
-  leitura; o `taskFormUrl` é onde o participante **envia as respostas**. Você
-  pode usar os dois ou apenas um deles.
+- Enquanto `taskFormUrl` estiver vazio (`""`), o botão "Acessar e realizar a
+  tarefa" fica **desativado** ("Ainda não disponível").
+- Dica: coloque o enunciado da tarefa como texto/descrição no próprio
+  formulário do Tally, para o aluno ler e responder no mesmo pop-up.
 
 ---
 

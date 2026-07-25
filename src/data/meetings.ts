@@ -7,11 +7,12 @@ import type { Meeting } from "../types/meeting";
  *
  *  • Liberar um encontro .... troque `released: false` para `released: true`
  *  • Ajustar a data ......... edite o campo `date`
- *  • Adicionar os links ..... preencha `recordingUrl`, `extraMaterialUrl`
- *                             e `assignmentUrl`
- *  • Formulário da tarefa ... cole o link do Tally em `taskFormUrl` para
- *                             habilitar o botão "Realizar tarefa" (o pop-up
- *                             abre o formulário já com o nome preenchido).
+ *  • Adicionar os links ..... preencha `recordingUrl` (gravação e transcrição)
+ *                             e `extraMaterialUrl` (material do encontro)
+ *  • Tarefa ................. cole o link do Tally em `taskFormUrl` para
+ *                             habilitar o botão "Acessar e realizar a tarefa"
+ *                             (o pop-up abre o formulário já com o nome
+ *                             preenchido).
  *
  * Regras importantes:
  *  • `released` é a fonte de verdade do estado (não use a data para liberar).
@@ -30,7 +31,6 @@ export const meetings: Meeting[] = [
     released: true,
     recordingUrl: "",
     extraMaterialUrl: "",
-    assignmentUrl: "",
     taskFormUrl: "",
   },
   {
@@ -43,7 +43,6 @@ export const meetings: Meeting[] = [
     released: false,
     recordingUrl: "",
     extraMaterialUrl: "",
-    assignmentUrl: "",
     taskFormUrl: "",
   },
   {
@@ -56,7 +55,6 @@ export const meetings: Meeting[] = [
     released: false,
     recordingUrl: "",
     extraMaterialUrl: "",
-    assignmentUrl: "",
     taskFormUrl: "",
   },
   {
@@ -69,7 +67,6 @@ export const meetings: Meeting[] = [
     released: false,
     recordingUrl: "",
     extraMaterialUrl: "",
-    assignmentUrl: "",
     taskFormUrl: "",
   },
   {
@@ -82,7 +79,6 @@ export const meetings: Meeting[] = [
     released: false,
     recordingUrl: "",
     extraMaterialUrl: "",
-    assignmentUrl: "",
     taskFormUrl: "",
   },
   {
@@ -95,7 +91,6 @@ export const meetings: Meeting[] = [
     released: false,
     recordingUrl: "",
     extraMaterialUrl: "",
-    assignmentUrl: "",
     taskFormUrl: "",
   },
   {
@@ -108,7 +103,6 @@ export const meetings: Meeting[] = [
     released: false,
     recordingUrl: "",
     extraMaterialUrl: "",
-    assignmentUrl: "",
     taskFormUrl: "",
   },
   {
@@ -121,7 +115,6 @@ export const meetings: Meeting[] = [
     released: false,
     recordingUrl: "",
     extraMaterialUrl: "",
-    assignmentUrl: "",
     taskFormUrl: "",
   },
   {
@@ -134,7 +127,6 @@ export const meetings: Meeting[] = [
     released: false,
     recordingUrl: "",
     extraMaterialUrl: "",
-    assignmentUrl: "",
     taskFormUrl: "",
   },
   {
@@ -147,7 +139,6 @@ export const meetings: Meeting[] = [
     released: false,
     recordingUrl: "",
     extraMaterialUrl: "",
-    assignmentUrl: "",
     taskFormUrl: "",
   },
   {
@@ -160,7 +151,6 @@ export const meetings: Meeting[] = [
     released: false,
     recordingUrl: "",
     extraMaterialUrl: "",
-    assignmentUrl: "",
     taskFormUrl: "",
   },
   {
@@ -173,7 +163,6 @@ export const meetings: Meeting[] = [
     released: false,
     recordingUrl: "",
     extraMaterialUrl: "",
-    assignmentUrl: "",
     taskFormUrl: "",
   },
 ];
