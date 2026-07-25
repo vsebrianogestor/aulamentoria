@@ -9,6 +9,9 @@ import type { Meeting } from "../types/meeting";
  *  • Ajustar a data ......... edite o campo `date`
  *  • Adicionar os links ..... preencha `recordingUrl`, `extraMaterialUrl`
  *                             e `assignmentUrl`
+ *  • Formulário da tarefa ... cole o link do Tally em `taskFormUrl` para
+ *                             habilitar o botão "Realizar tarefa" (o pop-up
+ *                             abre o formulário já com o nome preenchido).
  *
  * Regras importantes:
  *  • `released` é a fonte de verdade do estado (não use a data para liberar).
@@ -28,6 +31,7 @@ export const meetings: Meeting[] = [
     recordingUrl: "",
     extraMaterialUrl: "",
     assignmentUrl: "",
+    taskFormUrl: "",
   },
   {
     id: 2,
@@ -40,6 +44,7 @@ export const meetings: Meeting[] = [
     recordingUrl: "",
     extraMaterialUrl: "",
     assignmentUrl: "",
+    taskFormUrl: "",
   },
   {
     id: 3,
@@ -52,6 +57,7 @@ export const meetings: Meeting[] = [
     recordingUrl: "",
     extraMaterialUrl: "",
     assignmentUrl: "",
+    taskFormUrl: "",
   },
   {
     id: 4,
@@ -64,6 +70,7 @@ export const meetings: Meeting[] = [
     recordingUrl: "",
     extraMaterialUrl: "",
     assignmentUrl: "",
+    taskFormUrl: "",
   },
   {
     id: 5,
@@ -76,6 +83,7 @@ export const meetings: Meeting[] = [
     recordingUrl: "",
     extraMaterialUrl: "",
     assignmentUrl: "",
+    taskFormUrl: "",
   },
   {
     id: 6,
@@ -88,6 +96,7 @@ export const meetings: Meeting[] = [
     recordingUrl: "",
     extraMaterialUrl: "",
     assignmentUrl: "",
+    taskFormUrl: "",
   },
   {
     id: 7,
@@ -100,6 +109,7 @@ export const meetings: Meeting[] = [
     recordingUrl: "",
     extraMaterialUrl: "",
     assignmentUrl: "",
+    taskFormUrl: "",
   },
   {
     id: 8,
@@ -112,6 +122,7 @@ export const meetings: Meeting[] = [
     recordingUrl: "",
     extraMaterialUrl: "",
     assignmentUrl: "",
+    taskFormUrl: "",
   },
   {
     id: 9,
@@ -124,6 +135,7 @@ export const meetings: Meeting[] = [
     recordingUrl: "",
     extraMaterialUrl: "",
     assignmentUrl: "",
+    taskFormUrl: "",
   },
   {
     id: 10,
@@ -136,6 +148,7 @@ export const meetings: Meeting[] = [
     recordingUrl: "",
     extraMaterialUrl: "",
     assignmentUrl: "",
+    taskFormUrl: "",
   },
   {
     id: 11,
@@ -148,6 +161,7 @@ export const meetings: Meeting[] = [
     recordingUrl: "",
     extraMaterialUrl: "",
     assignmentUrl: "",
+    taskFormUrl: "",
   },
   {
     id: 12,
@@ -160,5 +174,6 @@ export const meetings: Meeting[] = [
     recordingUrl: "",
     extraMaterialUrl: "",
     assignmentUrl: "",
+    taskFormUrl: "",
   },
 ];

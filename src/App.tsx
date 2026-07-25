@@ -3,6 +3,7 @@ import { Header } from "./components/Header";
 import { WelcomeModal } from "./components/WelcomeModal";
 import { MeetingCard } from "./components/MeetingCard";
 import { MeetingModal } from "./components/MeetingModal";
+import { TaskModal } from "./components/TaskModal";
 import { useParticipantName } from "./hooks/useParticipantName";
 import { meetings } from "./data/meetings";
 import type { Meeting } from "./types/meeting";
@@ -11,6 +12,7 @@ export default function App() {
   const { name, saveName, loaded, hasName } = useParticipantName();
   const [isEditing, setIsEditing] = useState(false);
   const [selectedMeeting, setSelectedMeeting] = useState<Meeting | null>(null);
+  const [taskMeeting, setTaskMeeting] = useState<Meeting | null>(null);
 
   // Evita "piscar" a janela de boas-vindas antes de ler o LocalStorage.
   const showWelcome = loaded && !hasName;
@@ -72,6 +74,16 @@ export default function App() {
         <MeetingModal
           meeting={selectedMeeting}
           onClose={() => setSelectedMeeting(null)}
+          onOpenTask={setTaskMeeting}
+        />
+      )}
+
+      {/* Formulário da tarefa (Tally) incorporado em pop-up. */}
+      {taskMeeting && (
+        <TaskModal
+          meeting={taskMeeting}
+          participantName={name}
+          onClose={() => setTaskMeeting(null)}
         />
       )}
     </>

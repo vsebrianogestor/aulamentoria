@@ -12,5 +12,6 @@ export interface Meeting {
   released: boolean; // controla se o card é clicável e a modal abre
   recordingUrl: string; // link da gravação (vazio => botão desativado)
   extraMaterialUrl: string; // link do material complementar em PDF
-  assignmentUrl: string; // link da tarefa em PDF
+  assignmentUrl: string; // link da tarefa em PDF (enunciado para leitura)
+  taskFormUrl: string; // link do formulário Tally da tarefa (vazio => botão desativado)
 }

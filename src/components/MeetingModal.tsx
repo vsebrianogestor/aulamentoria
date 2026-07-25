@@ -1,18 +1,21 @@
 import { useEffect, useRef } from "react";
-import { X, PlayCircle, FileText, ClipboardCheck } from "lucide-react";
+import { X, PlayCircle, FileText, ClipboardCheck, PenLine } from "lucide-react";
 import type { Meeting } from "../types/meeting";
 import { ResourceButton } from "./ResourceButton";
 
 interface MeetingModalProps {
   meeting: Meeting;
   onClose: () => void;
+  /** Abre o pop-up do formulário da tarefa (Tally). */
+  onOpenTask: (meeting: Meeting) => void;
 }
 
 /**
  * Janela modal com os detalhes de um encontro liberado.
  * Fecha ao clicar fora, no botão de fechar ou ao pressionar Esc.
  */
-export function MeetingModal({ meeting, onClose }: MeetingModalProps) {
+export function MeetingModal({ meeting, onClose, onOpenTask }: MeetingModalProps) {
+  const hasTaskForm = meeting.taskFormUrl.trim().length > 0;
   const dialogRef = useRef<HTMLDivElement>(null);
   const closeRef = useRef<HTMLButtonElement>(null);
 
@@ -78,6 +81,11 @@ export function MeetingModal({ meeting, onClose }: MeetingModalProps) {
             label="Acessar tarefa"
             url={meeting.assignmentUrl}
             icon={ClipboardCheck}
+          />
+          <ResourceButton
+            label="Realizar tarefa"
+            icon={PenLine}
+            onClick={hasTaskForm ? () => onOpenTask(meeting) : undefined}
           />
         </div>
       </div>

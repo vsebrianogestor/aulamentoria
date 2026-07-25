@@ -112,6 +112,34 @@ assignmentUrl: "https://link-da-tarefa",         // tarefa (PDF)
 - **Não invente links.** Deixe `""` até o material existir e evite guardar
   antecipadamente links de encontros ainda bloqueados.
 
+### Como receber as respostas da tarefa (formulário Tally)
+
+Cada encontro tem um botão **"Realizar tarefa"** que abre um pop-up com um
+formulário [Tally](https://tally.so) incorporado. As respostas caem no seu
+painel do Tally (e você recebe aviso por e-mail) — o portal continua estático,
+sem backend.
+
+Para habilitar em um encontro:
+
+1. Crie uma conta grátis no [Tally](https://tally.so) e monte o formulário da
+   tarefa.
+2. **(Recomendado) Pré-preenchimento do nome:** adicione um campo (ex.: "Nome")
+   e, nas opções do campo, em *"URL parameter / prefill"*, defina a chave como
+   `nome`. O portal envia o nome do participante automaticamente nesse
+   parâmetro, então você sempre sabe quem respondeu.
+3. Copie o link do formulário (ex.: `https://tally.so/r/XXXXXX`) e cole no
+   campo `taskFormUrl` do encontro, em `src/data/meetings.ts`:
+
+```ts
+taskFormUrl: "https://tally.so/r/XXXXXX",
+```
+
+- Enquanto `taskFormUrl` estiver vazio (`""`), o botão "Realizar tarefa" fica
+  **desativado** ("Ainda não disponível").
+- O campo `assignmentUrl` (PDF) continua sendo o **enunciado** da tarefa para
+  leitura; o `taskFormUrl` é onde o participante **envia as respostas**. Você
+  pode usar os dois ou apenas um deles.
+
 ---
 
 ## Como publicar
