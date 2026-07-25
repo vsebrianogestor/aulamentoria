@@ -102,9 +102,14 @@ released: true, // encontro liberado
 Ainda em `src/data/meetings.ts`, preencha os campos de link do encontro:
 
 ```ts
-recordingUrl: "https://link-da-gravacao",     // gravação e transcrição
+recordingUrl: "https://link-da-gravacao",     // gravação em vídeo
+transcriptUrl: "https://link-da-transcricao", // transcrição (Google Docs etc.)
 extraMaterialUrl: "https://link-do-material", // material do encontro
 ```
+
+> Gravação e transcrição são **botões separados** — cada um aponta para o seu
+> próprio link. Se um deles ainda não existir, deixe `""` e o botão
+> correspondente aparece desativado.
 
 - Enquanto um campo estiver vazio (`""`), o botão correspondente aparece
   **desativado** com "Ainda não disponível" — sem gerar erro.

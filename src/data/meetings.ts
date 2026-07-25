@@ -7,8 +7,9 @@ import type { Meeting } from "../types/meeting";
  *
  *  • Liberar um encontro .... troque `released: false` para `released: true`
  *  • Ajustar a data ......... edite o campo `date`
- *  • Adicionar os links ..... preencha `recordingUrl` (gravação e transcrição)
- *                             e `extraMaterialUrl` (material do encontro)
+ *  • Adicionar os links ..... preencha `recordingUrl` (gravação em vídeo),
+ *                             `transcriptUrl` (transcrição) e
+ *                             `extraMaterialUrl` (material do encontro)
  *  • Tarefa ................. cole o link do Tally em `taskFormUrl` para
  *                             habilitar o botão "Acessar e realizar a tarefa"
  *                             (o pop-up abre o formulário já com o nome
@@ -29,8 +30,9 @@ export const meetings: Meeting[] = [
     description:
       "Mapeamento do modelo de negócio, objetivos, serviços prioritários, público, processo comercial e cenário atual da operação.",
     released: true,
-    // Gravação ainda será disponibilizada; por enquanto, a transcrição do encontro.
-    recordingUrl:
+    // A gravação em vídeo ainda será disponibilizada; por enquanto, a transcrição.
+    recordingUrl: "",
+    transcriptUrl:
       "https://docs.google.com/document/d/1IytTzFBorNdjawne_hRDI4HnAmhUMN_KqhPUMCcyfGo/edit?tab=t.m58zk6qtz4to",
     extraMaterialUrl: "/materiais/aula-01-material-extra.pdf",
     taskFormUrl: "https://tally.so/r/GxjMEj",
@@ -44,6 +46,7 @@ export const meetings: Meeting[] = [
       "Entendimento da função do tráfego pago e da conexão entre campanhas, marketing, atendimento e vendas.",
     released: false,
     recordingUrl: "",
+    transcriptUrl: "",
     extraMaterialUrl: "",
     taskFormUrl: "",
   },
@@ -56,6 +59,7 @@ export const meetings: Meeting[] = [
       "Planejamento inicial das campanhas e introdução aos principais conceitos de pixel, eventos, conversões e rastreamento.",
     released: false,
     recordingUrl: "",
+    transcriptUrl: "",
     extraMaterialUrl: "",
     taskFormUrl: "",
   },
@@ -68,6 +72,7 @@ export const meetings: Meeting[] = [
       "Compreensão da estrutura do Meta Ads, objetivos de campanha, públicos, distribuição de verba e remarketing.",
     released: false,
     recordingUrl: "",
+    transcriptUrl: "",
     extraMaterialUrl: "",
     taskFormUrl: "",
   },
@@ -80,6 +85,7 @@ export const meetings: Meeting[] = [
       "Análise do papel dos criativos e da comunicação, além das principais métricas utilizadas para tomar decisões.",
     released: false,
     recordingUrl: "",
+    transcriptUrl: "",
     extraMaterialUrl: "",
     taskFormUrl: "",
   },
@@ -92,6 +98,7 @@ export const meetings: Meeting[] = [
       "Entendimento da intenção de busca, campanhas de pesquisa, grupos de anúncios, palavras-chave e termos pesquisados.",
     released: false,
     recordingUrl: "",
+    transcriptUrl: "",
     extraMaterialUrl: "",
     taskFormUrl: "",
   },
@@ -104,6 +111,7 @@ export const meetings: Meeting[] = [
       "Construção e análise de anúncios, utilização de recursos, negativação de termos e identificação de desperdícios.",
     released: false,
     recordingUrl: "",
+    transcriptUrl: "",
     extraMaterialUrl: "",
     taskFormUrl: "",
   },
@@ -116,6 +124,7 @@ export const meetings: Meeting[] = [
       "Análise do caminho do lead após o clique e dos fatores que influenciam atendimento, conversão e qualidade.",
     released: false,
     recordingUrl: "",
+    transcriptUrl: "",
     extraMaterialUrl: "",
     taskFormUrl: "",
   },
@@ -128,6 +137,7 @@ export const meetings: Meeting[] = [
       "Interpretação das principais métricas e diferenciação entre indicadores de mídia e resultados comerciais.",
     released: false,
     recordingUrl: "",
+    transcriptUrl: "",
     extraMaterialUrl: "",
     taskFormUrl: "",
   },
@@ -140,6 +150,7 @@ export const meetings: Meeting[] = [
       "Criação de uma rotina prática para acompanhar verba, testes, campanhas, resultados e próximos ajustes.",
     released: false,
     recordingUrl: "",
+    transcriptUrl: "",
     extraMaterialUrl: "",
     taskFormUrl: "",
   },
@@ -152,6 +163,7 @@ export const meetings: Meeting[] = [
       "Revisão das campanhas, públicos, anúncios, palavras-chave, métricas e possíveis erros estruturais.",
     released: false,
     recordingUrl: "",
+    transcriptUrl: "",
     extraMaterialUrl: "",
     taskFormUrl: "",
   },
@@ -164,6 +176,7 @@ export const meetings: Meeting[] = [
       "Organização da rotina futura, próximos testes e plano de ação para a continuidade da operação interna.",
     released: false,
     recordingUrl: "",
+    transcriptUrl: "",
     extraMaterialUrl: "",
     taskFormUrl: "",
   },

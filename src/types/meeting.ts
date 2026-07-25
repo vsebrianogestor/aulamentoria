@@ -10,7 +10,8 @@ export interface Meeting {
   date: string; // formato livre, ex.: "12/08/2025" ou "DD/MM/AAAA"
   description: string;
   released: boolean; // controla se o card é clicável e a modal abre
-  recordingUrl: string; // link da gravação e transcrição (vazio => botão desativado)
+  recordingUrl: string; // link da gravação em vídeo (vazio => botão desativado)
+  transcriptUrl: string; // link da transcrição do encontro (vazio => botão desativado)
   extraMaterialUrl: string; // link do material do encontro (vazio => botão desativado)
   taskFormUrl: string; // link do formulário Tally da tarefa (vazio => botão desativado)
 }
