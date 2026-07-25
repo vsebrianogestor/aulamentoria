@@ -105,6 +105,7 @@ Ainda em `src/data/meetings.ts`, preencha os campos de link do encontro:
 recordingUrl: "https://link-da-gravacao",     // gravação em vídeo
 transcriptUrl: "https://link-da-transcricao", // transcrição (Google Docs etc.)
 extraMaterialUrl: "https://link-do-material", // material do encontro
+boardUrl: "https://link-da-lousa",            // lousa/quadro do encontro
 ```
 
 > Gravação e transcrição são **botões separados** — cada um aponta para o seu

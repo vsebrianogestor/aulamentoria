@@ -13,5 +13,6 @@ export interface Meeting {
   recordingUrl: string; // link da gravação em vídeo (vazio => botão desativado)
   transcriptUrl: string; // link da transcrição do encontro (vazio => botão desativado)
   extraMaterialUrl: string; // link do material do encontro (vazio => botão desativado)
+  boardUrl: string; // link da lousa/quadro do encontro (vazio => botão desativado)
   taskFormUrl: string; // link do formulário Tally da tarefa (vazio => botão desativado)
 }

@@ -1,5 +1,12 @@
 import { useEffect, useRef } from "react";
-import { X, PlayCircle, ScrollText, BookOpen, PenLine } from "lucide-react";
+import {
+  X,
+  PlayCircle,
+  ScrollText,
+  BookOpen,
+  Presentation,
+  PenLine,
+} from "lucide-react";
 import type { Meeting } from "../types/meeting";
 import { ResourceButton } from "./ResourceButton";
 
@@ -81,6 +88,11 @@ export function MeetingModal({ meeting, onClose, onOpenTask }: MeetingModalProps
             label="Acessar o material do encontro"
             url={meeting.extraMaterialUrl}
             icon={BookOpen}
+          />
+          <ResourceButton
+            label="Acessar a lousa do encontro"
+            url={meeting.boardUrl}
+            icon={Presentation}
           />
           <ResourceButton
             label="Acessar e realizar a tarefa"

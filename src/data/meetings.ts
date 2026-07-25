@@ -35,6 +35,7 @@ export const meetings: Meeting[] = [
     transcriptUrl:
       "https://docs.google.com/document/d/1IytTzFBorNdjawne_hRDI4HnAmhUMN_KqhPUMCcyfGo/edit?tab=t.m58zk6qtz4to",
     extraMaterialUrl: "/materiais/aula-01-material-extra.pdf",
+    boardUrl: "/materiais/aula-01-lousa.pdf",
     taskFormUrl: "https://tally.so/r/GxjMEj",
   },
   {
@@ -48,6 +49,7 @@ export const meetings: Meeting[] = [
     recordingUrl: "",
     transcriptUrl: "",
     extraMaterialUrl: "",
+    boardUrl: "",
     taskFormUrl: "",
   },
   {
@@ -61,6 +63,7 @@ export const meetings: Meeting[] = [
     recordingUrl: "",
     transcriptUrl: "",
     extraMaterialUrl: "",
+    boardUrl: "",
     taskFormUrl: "",
   },
   {
@@ -74,6 +77,7 @@ export const meetings: Meeting[] = [
     recordingUrl: "",
     transcriptUrl: "",
     extraMaterialUrl: "",
+    boardUrl: "",
     taskFormUrl: "",
   },
   {
@@ -87,6 +91,7 @@ export const meetings: Meeting[] = [
     recordingUrl: "",
     transcriptUrl: "",
     extraMaterialUrl: "",
+    boardUrl: "",
     taskFormUrl: "",
   },
   {
@@ -100,6 +105,7 @@ export const meetings: Meeting[] = [
     recordingUrl: "",
     transcriptUrl: "",
     extraMaterialUrl: "",
+    boardUrl: "",
     taskFormUrl: "",
   },
   {
@@ -113,6 +119,7 @@ export const meetings: Meeting[] = [
     recordingUrl: "",
     transcriptUrl: "",
     extraMaterialUrl: "",
+    boardUrl: "",
     taskFormUrl: "",
   },
   {
@@ -126,6 +133,7 @@ export const meetings: Meeting[] = [
     recordingUrl: "",
     transcriptUrl: "",
     extraMaterialUrl: "",
+    boardUrl: "",
     taskFormUrl: "",
   },
   {
@@ -139,6 +147,7 @@ export const meetings: Meeting[] = [
     recordingUrl: "",
     transcriptUrl: "",
     extraMaterialUrl: "",
+    boardUrl: "",
     taskFormUrl: "",
   },
   {
@@ -152,6 +161,7 @@ export const meetings: Meeting[] = [
     recordingUrl: "",
     transcriptUrl: "",
     extraMaterialUrl: "",
+    boardUrl: "",
     taskFormUrl: "",
   },
   {
@@ -165,6 +175,7 @@ export const meetings: Meeting[] = [
     recordingUrl: "",
     transcriptUrl: "",
     extraMaterialUrl: "",
+    boardUrl: "",
     taskFormUrl: "",
   },
   {
@@ -178,6 +189,7 @@ export const meetings: Meeting[] = [
     recordingUrl: "",
     transcriptUrl: "",
     extraMaterialUrl: "",
+    boardUrl: "",
     taskFormUrl: "",
   },
 ];
