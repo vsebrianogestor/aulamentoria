@@ -29,9 +29,11 @@ export const meetings: Meeting[] = [
     description:
       "Mapeamento do modelo de negócio, objetivos, serviços prioritários, público, processo comercial e cenário atual da operação.",
     released: true,
-    recordingUrl: "",
-    extraMaterialUrl: "",
-    taskFormUrl: "",
+    // Gravação ainda será disponibilizada; por enquanto, a transcrição do encontro.
+    recordingUrl:
+      "https://docs.google.com/document/d/1IytTzFBorNdjawne_hRDI4HnAmhUMN_KqhPUMCcyfGo/edit?tab=t.m58zk6qtz4to",
+    extraMaterialUrl: "/materiais/aula-01-material-extra.pdf",
+    taskFormUrl: "https://tally.so/r/GxjMEj",
   },
   {
     id: 2,
