@@ -55,8 +55,8 @@ export const meetings: Meeting[] = [
     released: true,
     recordingUrl:
       "https://drive.google.com/file/d/1bDbASoc2Aagb2O0t1HS46m-3cnoVeHNW/view",
-    transcriptUrl: "",
-    extraMaterialUrl: "",
+    transcriptUrl: "/materiais/aula-02-transcricao.html",
+    extraMaterialUrl: "/materiais/aula-02-material-extra.pdf",
     boardUrl: "/materiais/aula-02-lousa.pdf",
     taskFormUrl: "https://tally.so/r/zxA0j0",
   },
