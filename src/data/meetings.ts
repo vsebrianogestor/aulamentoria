@@ -83,11 +83,13 @@ export const meetings: Meeting[] = [
     date: "14/08",
     description:
       "Compreensão da estrutura do Meta Ads, objetivos de campanha, públicos, distribuição de verba e remarketing.",
-    released: false,
-    recordingUrl: "",
-    transcriptUrl: "",
+    released: true,
+    recordingUrl:
+      "https://drive.google.com/file/d/1e0-kEVGCgv1VHHlB7WGFue3y3wkqxiCK/view",
+    transcriptUrl:
+      "https://docs.google.com/document/d/1VZF-UIwdA_LyzCYTonxMkW6n6X4MoaqxuuvSK3al5bw/edit?tab=t.9ue8yv6rzdb6",
     extraMaterialUrl: "",
-    boardUrl: "",
+    boardUrl: "/materiais/aula-04-lousa.pdf",
     taskFormUrl: "",
   },
   {
