@@ -15,4 +15,10 @@ export interface Meeting {
   extraMaterialUrl: string; // link do material do encontro (vazio => botão desativado)
   boardUrl: string; // link da lousa/quadro do encontro (vazio => botão desativado)
   taskFormUrl: string; // link do formulário Tally da tarefa (vazio => botão desativado)
+  /**
+   * Recursos extras específicos do encontro (opcional). Aparecem como uma
+   * categoria "Guias do encontro" no modal, cada item com seu próprio botão.
+   * Ex.: guias práticos prometidos em uma aula específica.
+   */
+  extraResources?: { label: string; url: string }[];
 }

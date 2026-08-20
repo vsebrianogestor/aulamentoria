@@ -5,6 +5,7 @@ import {
   ScrollText,
   BookOpen,
   Presentation,
+  FileText,
   PenLine,
 } from "lucide-react";
 import type { Meeting } from "../types/meeting";
@@ -94,6 +95,29 @@ export function MeetingModal({ meeting, onClose, onOpenTask }: MeetingModalProps
             url={meeting.boardUrl}
             icon={Presentation}
           />
+
+          {/* Categoria opcional: guias/recursos extras específicos do encontro. */}
+          {meeting.extraResources && meeting.extraResources.length > 0 && (
+            <>
+              <div className="mt-1 flex items-center gap-3" aria-hidden="true">
+                <span className="h-px flex-1 bg-line" />
+                <span className="text-[11px] font-semibold uppercase tracking-label text-muted">
+                  Guias do encontro
+                </span>
+                <span className="h-px flex-1 bg-line" />
+              </div>
+              {meeting.extraResources.map((resource) => (
+                <ResourceButton
+                  key={resource.url}
+                  label={resource.label}
+                  url={resource.url}
+                  icon={FileText}
+                  variant="secondary"
+                />
+              ))}
+            </>
+          )}
+
           <ResourceButton
             label="Acessar e realizar a tarefa"
             icon={PenLine}

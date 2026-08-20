@@ -88,9 +88,19 @@ export const meetings: Meeting[] = [
       "https://drive.google.com/file/d/1e0-kEVGCgv1VHHlB7WGFue3y3wkqxiCK/view",
     transcriptUrl:
       "https://docs.google.com/document/d/1VZF-UIwdA_LyzCYTonxMkW6n6X4MoaqxuuvSK3al5bw/edit?tab=t.9ue8yv6rzdb6",
-    extraMaterialUrl: "",
+    extraMaterialUrl: "/materiais/aula-04-material-extra.pdf",
     boardUrl: "/materiais/aula-04-lousa.pdf",
     taskFormUrl: "https://tally.so/r/BzJga1",
+    extraResources: [
+      {
+        label: "Guia prático de objetivos de campanha",
+        url: "/materiais/aula-04-guia-objetivos.pdf",
+      },
+      {
+        label: "Guia para criação da BM (Business Manager)",
+        url: "/materiais/aula-04-guia-bm.pdf",
+      },
+    ],
   },
   {
     id: 5,
