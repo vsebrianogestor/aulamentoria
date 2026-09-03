@@ -111,7 +111,8 @@ export const meetings: Meeting[] = [
     released: true,
     recordingUrl:
       "https://drive.google.com/file/d/1YILPC_sQIAE_Lbt043Srr_qN4nS3aR2Q/view?usp=sharing",
-    transcriptUrl: "",
+    transcriptUrl:
+      "https://docs.google.com/document/d/1sR6USE2UrkvQYcMESysQahoCdhfzMjOu5QFkp28Xp0s/edit?usp=sharing",
     extraMaterialUrl: "",
     boardUrl: "/materiais/aula-05-lousa.pdf",
     taskFormUrl: "",
