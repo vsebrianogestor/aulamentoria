@@ -136,7 +136,7 @@ export const meetings: Meeting[] = [
   {
     id: 7,
     number: "07",
-    title: "Google Ads: anúncios, recursos e otimização",
+    title: "Google Ads: ORQUESTRA. Como pensar qualquer campanha no Google Ads",
     date: "01/09",
     description:
       "Construção e análise de anúncios, utilização de recursos, negativação de termos e identificação de desperdícios.",
