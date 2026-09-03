@@ -11,10 +11,9 @@ import type { Meeting } from "../types/meeting";
  *                             `transcriptUrl` (transcrição) e
  *                             `extraMaterialUrl` (material do encontro)
  *  • Lousa do encontro ...... preencha `boardUrl`
- *  • Tarefa ................. cole o link do Tally em `taskFormUrl` para
- *                             habilitar o botão "Acessar e realizar a tarefa"
- *                             (o pop-up abre o formulário já com o nome
- *                             preenchido).
+ *  • Guias/extras ........... use `extraResources` (lista de { label, url })
+ *                             para recursos específicos do encontro
+ *  • Tarefa ................. cole o link do Tally em `taskFormUrl`
  *
  * Regras importantes:
  *  • `released` é a fonte de verdade do estado (não use a data para liberar).
@@ -23,7 +22,7 @@ import type { Meeting } from "../types/meeting";
  *  • Não guarde antecipadamente links de encontros ainda bloqueados.
  *
  * Observação sobre o cronograma:
- *  • Encontros às terças e sextas. Não houve encontro em 21/08.
+ *  • Encontros às terças e sextas. Não houve encontro em 21/08 e 25/08.
  *  • O tema original do 3º encontro foi dividido: o Encontro 03 trata de
  *    "Estrutura de campanha e planejamento" e há um Encontro Extra
  *    (entre o 8º e o 9º) dedicado a "Mensuração e traqueamento".
@@ -109,46 +108,51 @@ export const meetings: Meeting[] = [
     date: "18/08",
     description:
       "Análise do papel dos criativos e da comunicação, além das principais métricas utilizadas para tomar decisões.",
-    released: false,
-    recordingUrl: "",
+    released: true,
+    recordingUrl:
+      "https://drive.google.com/file/d/1YILPC_sQIAE_Lbt043Srr_qN4nS3aR2Q/view?usp=sharing",
     transcriptUrl: "",
     extraMaterialUrl: "",
-    boardUrl: "",
+    boardUrl: "/materiais/aula-05-lousa.pdf",
     taskFormUrl: "",
   },
   {
     id: 6,
     number: "06",
     title: "Google Ads: intenção de busca e estrutura de campanha",
-    date: "25/08",
+    date: "28/08",
     description:
       "Entendimento da intenção de busca, campanhas de pesquisa, grupos de anúncios, palavras-chave e termos pesquisados.",
-    released: false,
-    recordingUrl: "",
-    transcriptUrl: "",
+    released: true,
+    recordingUrl:
+      "https://drive.google.com/file/d/12VMk-Lqi0FtQMypt9oJ_eda2N1k0STjq/view?usp=sharing",
+    transcriptUrl:
+      "https://docs.google.com/document/d/18AuGAybKmsHSViSF62T2ffTYdJ7MdGWmZuoX7KBpw14/edit?usp=sharing",
     extraMaterialUrl: "",
-    boardUrl: "",
+    boardUrl: "/materiais/aula-06-lousa.pdf",
     taskFormUrl: "",
   },
   {
     id: 7,
     number: "07",
     title: "Google Ads: anúncios, recursos e otimização",
-    date: "28/08",
+    date: "01/09",
     description:
       "Construção e análise de anúncios, utilização de recursos, negativação de termos e identificação de desperdícios.",
-    released: false,
-    recordingUrl: "",
-    transcriptUrl: "",
+    released: true,
+    recordingUrl:
+      "https://drive.google.com/file/d/18VO0MJ3BwYL9T9WAAeyLiyKoUxpjAoEu/view?usp=sharing",
+    transcriptUrl:
+      "https://docs.google.com/document/d/1WplKEgtXpCga3IvsBeYHa6llDnXFlA6JBuB3xb1ikGU/edit?usp=sharing",
     extraMaterialUrl: "",
-    boardUrl: "",
+    boardUrl: "/materiais/aula-07-lousa.pdf",
     taskFormUrl: "",
   },
   {
     id: 8,
     number: "08",
     title: "Página, WhatsApp, atendimento e qualidade do lead",
-    date: "01/09",
+    date: "04/09",
     description:
       "Análise do caminho do lead após o clique e dos fatores que influenciam atendimento, conversão e qualidade.",
     released: false,
@@ -162,7 +166,7 @@ export const meetings: Meeting[] = [
     id: 9,
     number: "Extra",
     title: "Mensuração e traqueamento",
-    date: "04/09",
+    date: "08/09",
     description:
       "Conceitos de pixel, eventos, conversões e rastreamento para medir e acompanhar corretamente os resultados das campanhas.",
     released: false,
@@ -176,7 +180,7 @@ export const meetings: Meeting[] = [
     id: 10,
     number: "09",
     title: "Métricas essenciais e leitura de resultados",
-    date: "08/09",
+    date: "11/09",
     description:
       "Interpretação das principais métricas e diferenciação entre indicadores de mídia e resultados comerciais.",
     released: false,
@@ -190,7 +194,7 @@ export const meetings: Meeting[] = [
     id: 11,
     number: "10",
     title: "Rotina de otimização e acompanhamento semanal",
-    date: "11/09",
+    date: "15/09",
     description:
       "Criação de uma rotina prática para acompanhar verba, testes, campanhas, resultados e próximos ajustes.",
     released: false,
@@ -204,7 +208,7 @@ export const meetings: Meeting[] = [
     id: 12,
     number: "11",
     title: "Aplicação prática e revisão da estrutura",
-    date: "15/09",
+    date: "18/09",
     description:
       "Revisão das campanhas, públicos, anúncios, palavras-chave, métricas e possíveis erros estruturais.",
     released: false,
@@ -218,7 +222,7 @@ export const meetings: Meeting[] = [
     id: 13,
     number: "12",
     title: "Plano de continuidade e autonomia operacional",
-    date: "18/09",
+    date: "22/09",
     description:
       "Organização da rotina futura, próximos testes e plano de ação para a continuidade da operação interna.",
     released: false,
