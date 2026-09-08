@@ -16,6 +16,12 @@ export interface Meeting {
   boardUrl: string; // link da lousa/quadro do encontro (vazio => botão desativado)
   taskFormUrl: string; // link do formulário Tally da tarefa (vazio => botão desativado)
   /**
+   * Correção da tarefa (opcional). Quando preenchido, adiciona o botão
+   * "Correção da tarefa" no modal. Fica oculto quando não há correção
+   * (ex.: encontros corrigidos ao vivo na aula).
+   */
+  taskCorrectionUrl?: string;
+  /**
    * Recursos extras específicos do encontro (opcional). Aparecem como uma
    * categoria "Guias do encontro" no modal, cada item com seu próprio botão.
    * Ex.: guias práticos prometidos em uma aula específica.

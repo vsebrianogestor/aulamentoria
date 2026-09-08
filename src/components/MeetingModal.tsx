@@ -7,6 +7,7 @@ import {
   Presentation,
   FileText,
   PenLine,
+  CircleCheck,
 } from "lucide-react";
 import type { Meeting } from "../types/meeting";
 import { ResourceButton } from "./ResourceButton";
@@ -123,6 +124,13 @@ export function MeetingModal({ meeting, onClose, onOpenTask }: MeetingModalProps
             icon={PenLine}
             onClick={hasTaskForm ? () => onOpenTask(meeting) : undefined}
           />
+          {meeting.taskCorrectionUrl && (
+            <ResourceButton
+              label="Correção da tarefa"
+              url={meeting.taskCorrectionUrl}
+              icon={CircleCheck}
+            />
+          )}
         </div>
       </div>
     </div>

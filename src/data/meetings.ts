@@ -58,6 +58,8 @@ export const meetings: Meeting[] = [
     extraMaterialUrl: "/materiais/aula-02-material-extra.pdf",
     boardUrl: "/materiais/aula-02-lousa.pdf",
     taskFormUrl: "https://tally.so/r/zxA0j0",
+    taskCorrectionUrl:
+      "https://drive.google.com/file/d/1yaHJnbvFqiLGh5AAqI-ev33niK5JHbQn/view?usp=sharing",
   },
   {
     id: 3,
@@ -74,6 +76,8 @@ export const meetings: Meeting[] = [
     extraMaterialUrl: "/materiais/aula-03-material-extra.pdf",
     boardUrl: "/materiais/aula-03-lousa.pdf",
     taskFormUrl: "https://tally.so/r/PdQ2MV",
+    taskCorrectionUrl:
+      "https://drive.google.com/file/d/1hjHAeuG5-2rnbIDfkgv2Zh7k2l7FZOHJ/view?usp=sharing",
   },
   {
     id: 4,
@@ -90,6 +94,8 @@ export const meetings: Meeting[] = [
     extraMaterialUrl: "/materiais/aula-04-material-extra.pdf",
     boardUrl: "/materiais/aula-04-lousa.pdf",
     taskFormUrl: "https://tally.so/r/BzJga1",
+    taskCorrectionUrl:
+      "https://drive.google.com/file/d/1_ttXK-9w-R5TMIMU50BOhyeBzRDurykU/view?usp=sharing",
     extraResources: [
       {
         label: "Guia prático de objetivos de campanha",
