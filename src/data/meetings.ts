@@ -162,9 +162,11 @@ export const meetings: Meeting[] = [
     date: "04/09",
     description:
       "Análise do caminho do lead após o clique e dos fatores que influenciam atendimento, conversão e qualidade.",
-    released: false,
-    recordingUrl: "",
-    transcriptUrl: "",
+    released: true,
+    recordingUrl:
+      "https://drive.google.com/file/d/1_KlmVGOKjO2rK-f4gcd9wlDFwIKLp3Fj/view?usp=sharing",
+    transcriptUrl:
+      "https://docs.google.com/document/d/1klj4tIXAPEh_1dIdmDYyPxVJoqadcX7yYE8eCCKCOUM/edit?usp=sharing",
     extraMaterialUrl: "",
     boardUrl: "",
     taskFormUrl: "",
@@ -176,9 +178,11 @@ export const meetings: Meeting[] = [
     date: "08/09",
     description:
       "Conceitos de pixel, eventos, conversões e rastreamento para medir e acompanhar corretamente os resultados das campanhas.",
-    released: false,
-    recordingUrl: "",
-    transcriptUrl: "",
+    released: true,
+    recordingUrl:
+      "https://drive.google.com/file/d/1lYRVsdb_ftEUuqZDTv2tyuLi6l9CYlxF/view?usp=sharing",
+    transcriptUrl:
+      "https://docs.google.com/document/d/1fc8O7QmE1z7UKudtXiPXJkVxccva7b3jIMZTsna50JE/edit?usp=sharing",
     extraMaterialUrl: "",
     boardUrl: "",
     taskFormUrl: "",
@@ -187,7 +191,7 @@ export const meetings: Meeting[] = [
     id: 10,
     number: "09",
     title: "Métricas essenciais e leitura de resultados",
-    date: "11/09",
+    date: "15/09",
     description:
       "Interpretação das principais métricas e diferenciação entre indicadores de mídia e resultados comerciais.",
     released: false,
@@ -201,7 +205,7 @@ export const meetings: Meeting[] = [
     id: 11,
     number: "10",
     title: "Rotina de otimização e acompanhamento semanal",
-    date: "15/09",
+    date: "18/09",
     description:
       "Criação de uma rotina prática para acompanhar verba, testes, campanhas, resultados e próximos ajustes.",
     released: false,
@@ -215,7 +219,7 @@ export const meetings: Meeting[] = [
     id: 12,
     number: "11",
     title: "Aplicação prática e revisão da estrutura",
-    date: "18/09",
+    date: "22/09",
     description:
       "Revisão das campanhas, públicos, anúncios, palavras-chave, métricas e possíveis erros estruturais.",
     released: false,
@@ -229,7 +233,7 @@ export const meetings: Meeting[] = [
     id: 13,
     number: "12",
     title: "Plano de continuidade e autonomia operacional",
-    date: "22/09",
+    date: "25/09",
     description:
       "Organização da rotina futura, próximos testes e plano de ação para a continuidade da operação interna.",
     released: false,
