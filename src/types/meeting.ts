@@ -23,8 +23,13 @@ export interface Meeting {
   taskCorrectionUrl?: string;
   /**
    * Recursos extras específicos do encontro (opcional). Aparecem como uma
-   * categoria "Guias do encontro" no modal, cada item com seu próprio botão.
-   * Ex.: guias práticos prometidos em uma aula específica.
+   * categoria própria no modal, cada item com seu próprio botão.
+   * Ex.: guias práticos, links de vídeos, aula guiada etc.
    */
   extraResources?: { label: string; url: string }[];
+  /**
+   * Título da categoria de recursos extras (opcional).
+   * Padrão: "Guias do encontro".
+   */
+  extraResourcesLabel?: string;
 }

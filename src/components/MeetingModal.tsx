@@ -103,7 +103,7 @@ export function MeetingModal({ meeting, onClose, onOpenTask }: MeetingModalProps
               <div className="mt-1 flex items-center gap-3" aria-hidden="true">
                 <span className="h-px flex-1 bg-line" />
                 <span className="text-[11px] font-semibold uppercase tracking-label text-muted">
-                  Guias do encontro
+                  {meeting.extraResourcesLabel ?? "Guias do encontro"}
                 </span>
                 <span className="h-px flex-1 bg-line" />
               </div>

@@ -186,6 +186,17 @@ export const meetings: Meeting[] = [
     extraMaterialUrl: "",
     boardUrl: "",
     taskFormUrl: "",
+    extraResourcesLabel: "Materiais complementares",
+    extraResources: [
+      {
+        label: "Links dos vídeos necessários",
+        url: "https://docs.google.com/document/d/1IaqcZDp9exx8P-yjQXaR-i08zt8gI91QCluYVkDVLFo/edit?usp=sharing",
+      },
+      {
+        label: "Aula guiada — Configurando o GTM da Real na prática",
+        url: "https://drive.google.com/file/d/1JSkICaKOPj2lXN-OKAnRj63P5mrY0aUn/view?usp=sharing",
+      },
+    ],
   },
   {
     id: 10,
