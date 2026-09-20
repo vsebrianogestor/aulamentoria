@@ -153,7 +153,7 @@ export const meetings: Meeting[] = [
       "https://docs.google.com/document/d/1WplKEgtXpCga3IvsBeYHa6llDnXFlA6JBuB3xb1ikGU/edit?usp=sharing",
     extraMaterialUrl: "/materiais/aula-07-material-extra.pdf",
     boardUrl: "/materiais/aula-07-lousa.pdf",
-    taskFormUrl: "",
+    taskFormUrl: "https://tally.so/r/Ekp6L4",
     extraResources: [
       {
         label: "Guia de objetivos e tipos de campanha — Google Ads",
