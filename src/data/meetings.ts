@@ -151,9 +151,15 @@ export const meetings: Meeting[] = [
       "https://drive.google.com/file/d/18VO0MJ3BwYL9T9WAAeyLiyKoUxpjAoEu/view?usp=sharing",
     transcriptUrl:
       "https://docs.google.com/document/d/1WplKEgtXpCga3IvsBeYHa6llDnXFlA6JBuB3xb1ikGU/edit?usp=sharing",
-    extraMaterialUrl: "",
+    extraMaterialUrl: "/materiais/aula-07-material-extra.pdf",
     boardUrl: "/materiais/aula-07-lousa.pdf",
     taskFormUrl: "",
+    extraResources: [
+      {
+        label: "Guia de objetivos e tipos de campanha — Google Ads",
+        url: "/materiais/aula-07-guia-tipos-campanha.pdf",
+      },
+    ],
   },
   {
     id: 8,
