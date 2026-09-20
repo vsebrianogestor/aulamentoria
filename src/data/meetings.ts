@@ -211,9 +211,10 @@ export const meetings: Meeting[] = [
     date: "15/09",
     description:
       "Interpretação das principais métricas e diferenciação entre indicadores de mídia e resultados comerciais.",
-    released: false,
-    recordingUrl: "",
-    transcriptUrl: "",
+    released: true,
+    recordingUrl:
+      "https://drive.google.com/file/d/1bQ0bam6sHDzEtNh6Mz2cMVKAI369nS2S/view?usp=sharing",
+    transcriptUrl: "/materiais/aula-09-transcricao.pdf",
     extraMaterialUrl: "",
     boardUrl: "",
     taskFormUrl: "",
