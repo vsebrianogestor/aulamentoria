@@ -138,6 +138,8 @@ export const meetings: Meeting[] = [
     extraMaterialUrl: "/materiais/aula-06-material-extra.pdf",
     boardUrl: "/materiais/aula-06-lousa.pdf",
     taskFormUrl: "https://tally.so/r/Zj7vy5",
+    taskCorrectionUrl:
+      "https://drive.google.com/file/d/1-XEH5rzh162KaTKhXed0u409rSTaqBLp/view?usp=sharing",
   },
   {
     id: 7,
@@ -174,7 +176,7 @@ export const meetings: Meeting[] = [
     transcriptUrl:
       "https://docs.google.com/document/d/1klj4tIXAPEh_1dIdmDYyPxVJoqadcX7yYE8eCCKCOUM/edit?usp=sharing",
     extraMaterialUrl: "",
-    boardUrl: "",
+    boardUrl: "/materiais/aula-08-lousa.pdf",
     taskFormUrl: "",
   },
   {
@@ -190,7 +192,7 @@ export const meetings: Meeting[] = [
     transcriptUrl:
       "https://docs.google.com/document/d/1fc8O7QmE1z7UKudtXiPXJkVxccva7b3jIMZTsna50JE/edit?usp=sharing",
     extraMaterialUrl: "",
-    boardUrl: "",
+    boardUrl: "/materiais/aula-extra-lousa.pdf",
     taskFormUrl: "",
     extraResourcesLabel: "Materiais complementares",
     extraResources: [
@@ -216,7 +218,7 @@ export const meetings: Meeting[] = [
       "https://drive.google.com/file/d/1bQ0bam6sHDzEtNh6Mz2cMVKAI369nS2S/view?usp=sharing",
     transcriptUrl: "/materiais/aula-09-transcricao.pdf",
     extraMaterialUrl: "",
-    boardUrl: "",
+    boardUrl: "/materiais/aula-09-lousa.pdf",
     taskFormUrl: "",
   },
   {
