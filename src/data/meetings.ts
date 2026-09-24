@@ -175,9 +175,9 @@ export const meetings: Meeting[] = [
       "https://drive.google.com/file/d/1_KlmVGOKjO2rK-f4gcd9wlDFwIKLp3Fj/view?usp=sharing",
     transcriptUrl:
       "https://docs.google.com/document/d/1klj4tIXAPEh_1dIdmDYyPxVJoqadcX7yYE8eCCKCOUM/edit?usp=sharing",
-    extraMaterialUrl: "",
+    extraMaterialUrl: "/materiais/aula-08-material-extra.pdf",
     boardUrl: "/materiais/aula-08-lousa.pdf",
-    taskFormUrl: "",
+    taskFormUrl: "https://tally.so/r/zxlrgM",
   },
   {
     id: 9,
