@@ -32,4 +32,21 @@ export interface Meeting {
    * Padrão: "Guias do encontro".
    */
   extraResourcesLabel?: string;
+  /**
+   * Divide o encontro em múltiplas partes (opcional). Use quando o mesmo
+   * encontro foi realizado em datas/temas diferentes (ex.: continuação em
+   * outro dia). Quando presente, o modal substitui os botões únicos de
+   * "gravação"/"transcrição" por um bloco compacto por parte; os demais
+   * campos do encontro (material, lousa, tarefa) continuam valendo para
+   * o encontro como um todo.
+   */
+  parts?: MeetingPart[];
+}
+
+export interface MeetingPart {
+  label: string; // "Parte 1", "Parte 2", ...
+  date: string;
+  theme: string; // assunto tratado nesta parte
+  recordingUrl: string; // vazio => botão desativado
+  transcriptUrl: string; // vazio => botão desativado
 }

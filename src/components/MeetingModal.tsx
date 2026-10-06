@@ -76,16 +76,50 @@ export function MeetingModal({ meeting, onClose, onOpenTask }: MeetingModalProps
         </p>
 
         <div className="mt-7 flex flex-col gap-3">
-          <ResourceButton
-            label="Assistir à gravação"
-            url={meeting.recordingUrl}
-            icon={PlayCircle}
-          />
-          <ResourceButton
-            label="Ler a transcrição"
-            url={meeting.transcriptUrl}
-            icon={ScrollText}
-          />
+          {meeting.parts && meeting.parts.length > 0 ? (
+            <div className="flex flex-col gap-2.5">
+              {meeting.parts.map((part) => (
+                <div
+                  key={part.label}
+                  className="rounded-lg border border-line bg-stone/50 p-3.5"
+                >
+                  <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-0.5">
+                    <span className="text-sm font-semibold text-ink">
+                      {part.label} — {part.theme}
+                    </span>
+                    <span className="text-xs text-muted">{part.date}</span>
+                  </div>
+                  <div className="mt-2.5 flex flex-col gap-2 sm:flex-row">
+                    <ResourceButton
+                      label="Gravação"
+                      url={part.recordingUrl}
+                      icon={PlayCircle}
+                      variant="secondary"
+                    />
+                    <ResourceButton
+                      label="Transcrição"
+                      url={part.transcriptUrl}
+                      icon={ScrollText}
+                      variant="secondary"
+                    />
+                  </div>
+                </div>
+              ))}
+            </div>
+          ) : (
+            <>
+              <ResourceButton
+                label="Assistir à gravação"
+                url={meeting.recordingUrl}
+                icon={PlayCircle}
+              />
+              <ResourceButton
+                label="Ler a transcrição"
+                url={meeting.transcriptUrl}
+                icon={ScrollText}
+              />
+            </>
+          )}
           <ResourceButton
             label="Acessar o material do encontro"
             url={meeting.extraMaterialUrl}
