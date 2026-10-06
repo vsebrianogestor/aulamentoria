@@ -249,8 +249,7 @@ export const meetings: Meeting[] = [
         theme: "Meta Ads",
         recordingUrl:
           "https://drive.google.com/file/d/1aiv-AjtXAPtcBqu5Ep6O4bMY0KxDobZp/view?usp=sharing",
-        transcriptUrl:
-          "https://docs.google.com/document/d/1uQ7FAaKlUJIaqZqoUu25ERAB8E8QDHPqCPKU4R3mmr8/edit?usp=sharing",
+        transcriptUrl: "/materiais/aula-10-parte2-transcricao.pdf",
       },
       {
         label: "Parte 3",
