@@ -232,7 +232,7 @@ export const meetings: Meeting[] = [
     recordingUrl: "",
     transcriptUrl: "",
     extraMaterialUrl: "",
-    boardUrl: "",
+    boardUrl: "/materiais/aula-10-lousa.pdf",
     taskFormUrl: "",
     parts: [
       {
@@ -271,7 +271,7 @@ export const meetings: Meeting[] = [
     recordingUrl: "",
     transcriptUrl: "",
     extraMaterialUrl: "",
-    boardUrl: "",
+    boardUrl: "/materiais/aula-11-lousa.pdf",
     taskFormUrl: "",
   },
   {
