@@ -24,7 +24,16 @@ export interface Certificate {
 export const certificates: Certificate[] = [
   {
     displayName: "Priscila Puglese",
-    aliases: ["priscila puglese", "priscilla puglese", "priscila", "priscilla"],
+    // "pri/alex" e variações: perfil de teste combinado, pedido à parte.
+    aliases: [
+      "priscila puglese",
+      "priscilla puglese",
+      "priscila",
+      "priscilla",
+      "pri/alex",
+      "pri / alex",
+      "pri alex",
+    ],
     fileUrl: "/materiais/certificados/certificado-priscila-puglese.pdf",
   },
   {
@@ -46,6 +55,7 @@ export const certificates: Certificate[] = [
       "alex",
       "alex almeida",
       "alexandre almeida",
+      "alex xavier",
       "vinicius",
       "vinicius sebriano",
       "bianca",
