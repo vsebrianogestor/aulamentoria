@@ -257,7 +257,7 @@ export const meetings: Meeting[] = [
         theme: "Google Ads",
         recordingUrl:
           "https://drive.google.com/file/d/1O8t4qQ5TQqPshfGW2d7HLdJo8ZSlWQrz/view?usp=sharing",
-        transcriptUrl: "",
+        transcriptUrl: "/materiais/aula-10-parte3-transcricao.pdf",
       },
     ],
   },
