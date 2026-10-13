@@ -39,7 +39,15 @@ export const certificates: Certificate[] = [
   },
   {
     displayName: "Alex",
-    aliases: ["alex", "alex almeida", "alexandre almeida"],
+    // "vinicius" incluído de propósito: permite ao mentor conferir o bloco
+    // de certificado digitando o próprio nome, usando o PDF do Alex de teste.
+    aliases: [
+      "alex",
+      "alex almeida",
+      "alexandre almeida",
+      "vinicius",
+      "vinicius sebriano",
+    ],
     fileUrl: "/materiais/certificados/certificado-alex.pdf",
   },
 ];
