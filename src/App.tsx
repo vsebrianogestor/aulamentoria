@@ -1,11 +1,13 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { Header } from "./components/Header";
 import { WelcomeModal } from "./components/WelcomeModal";
 import { MeetingCard } from "./components/MeetingCard";
 import { MeetingModal } from "./components/MeetingModal";
 import { TaskModal } from "./components/TaskModal";
+import { CertificateBanner } from "./components/CertificateBanner";
 import { useParticipantName } from "./hooks/useParticipantName";
 import { meetings } from "./data/meetings";
+import { findCertificateForName } from "./data/certificates";
 import type { Meeting } from "./types/meeting";
 
 export default function App() {
@@ -13,6 +15,8 @@ export default function App() {
   const [isEditing, setIsEditing] = useState(false);
   const [selectedMeeting, setSelectedMeeting] = useState<Meeting | null>(null);
   const [taskMeeting, setTaskMeeting] = useState<Meeting | null>(null);
+
+  const certificate = useMemo(() => findCertificateForName(name), [name]);
 
   // Evita "piscar" a janela de boas-vindas antes de ler o LocalStorage.
   const showWelcome = loaded && !hasName;
@@ -29,6 +33,11 @@ export default function App() {
         <Header participantName={name} onEditName={() => setIsEditing(true)} />
 
         <main className="mx-auto w-full max-w-[1360px] flex-1 px-4 py-8 animate-page-in sm:px-6 sm:py-10 lg:px-10 lg:py-12">
+          {/* Certificado de conclusão (quando o nome digitado corresponde). */}
+          {hasName && certificate && (
+            <CertificateBanner certificate={certificate} participantName={name} />
+          )}
+
           {/* Área de abertura */}
           <section className="mb-8 sm:mb-10">
             <h2 className="font-display text-3xl text-ink tracking-display sm:text-4xl">

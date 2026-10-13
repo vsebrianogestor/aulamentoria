@@ -15,6 +15,8 @@ export default {
         subtle: "#B7B2A8", // texto/ícones ainda mais suaves
         success: "#16A34A", // verde do ponto de status "Disponível"
         "success-text": "#15803D", // verde do texto (contraste AA em fundo claro)
+        gold: "#D4AF37", // dourado do bloco de certificado (conquista)
+        "gold-light": "#E3C565", // hover do botão de certificado
       },
       fontFamily: {
         // VIBERATE (fonte solicitada) para marca e títulos de destaque.
@@ -52,11 +54,22 @@ export default {
           from: { opacity: "0", transform: "translateY(10px)" },
           to: { opacity: "1", transform: "translateY(0)" },
         },
+        shine: {
+          from: { backgroundPosition: "200% 0" },
+          to: { backgroundPosition: "-200% 0" },
+        },
+        "pop-in": {
+          "0%": { opacity: "0", transform: "scale(0.6)" },
+          "60%": { opacity: "1", transform: "scale(1.08)" },
+          "100%": { opacity: "1", transform: "scale(1)" },
+        },
       },
       animation: {
         "fade-in": "fade-in 200ms ease-out",
         "modal-in": "modal-in 200ms ease-out",
         "page-in": "page-in 400ms ease-out",
+        shine: "shine 3.5s ease-in-out infinite",
+        "pop-in": "pop-in 500ms cubic-bezier(0.34, 1.56, 0.64, 1) 150ms both",
       },
     },
   },
