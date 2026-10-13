@@ -255,7 +255,8 @@ export const meetings: Meeting[] = [
         label: "Parte 3",
         date: "06/10",
         theme: "Google Ads",
-        recordingUrl: "",
+        recordingUrl:
+          "https://drive.google.com/file/d/1O8t4qQ5TQqPshfGW2d7HLdJo8ZSlWQrz/view?usp=sharing",
         transcriptUrl: "",
       },
     ],
@@ -268,7 +269,8 @@ export const meetings: Meeting[] = [
     description:
       "Criação de uma rotina prática para acompanhar verba, testes, campanhas, resultados e próximos ajustes.",
     released: false,
-    recordingUrl: "",
+    recordingUrl:
+      "https://drive.google.com/file/d/16AUhbaj_X2yMcK9JpwWp2T9ahGEPQiTF/view?usp=sharing",
     transcriptUrl: "",
     extraMaterialUrl: "",
     boardUrl: "/materiais/aula-11-lousa.pdf",
