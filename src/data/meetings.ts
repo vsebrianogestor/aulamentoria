@@ -268,7 +268,7 @@ export const meetings: Meeting[] = [
     date: "09/10",
     description:
       "Criação de uma rotina prática para acompanhar verba, testes, campanhas, resultados e próximos ajustes.",
-    released: false,
+    released: true,
     recordingUrl:
       "https://drive.google.com/file/d/16AUhbaj_X2yMcK9JpwWp2T9ahGEPQiTF/view?usp=sharing",
     transcriptUrl: "",
