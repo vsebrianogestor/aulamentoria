@@ -43,6 +43,10 @@ export function CertificateBanner({
               Você concluiu a Mentoria de Implantação de Tráfego Pago Interno.
               Seu certificado já está pronto — baixe e guarde essa conquista.
             </p>
+            <p className="mt-2 max-w-md text-sm leading-relaxed text-white/70">
+              Parabéns pelo tempo dedicado e agradecemos a confiança, você
+              merece!
+            </p>
           </div>
         </div>
 
