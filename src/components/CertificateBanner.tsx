@@ -36,8 +36,15 @@ export function CertificateBanner({
               <Sparkles className="h-3.5 w-3.5" strokeWidth={2} />
               Mentoria concluída
             </p>
-            <h2 className="mt-1.5 font-display text-xl leading-tight text-white tracking-display sm:text-2xl">
-              Parabéns, {participantName.split(" ")[0]}!
+            <h2 className="mt-1.5 text-xl leading-tight text-white sm:text-2xl">
+              {/* Vírgula e exclamação fora da fonte de exibição: a Viberate
+                  desenha a vírgula de um jeito que pode ser lido como ponto. */}
+              <span className="font-display tracking-display">Parabéns</span>
+              <span className="font-sans">, </span>
+              <span className="font-display tracking-display">
+                {participantName.split(" ")[0]}
+              </span>
+              <span className="font-sans">!</span>
             </h2>
             <p className="mt-1.5 max-w-md text-sm leading-relaxed text-white/70">
               Você concluiu a Mentoria de Implantação de Tráfego Pago Interno.
